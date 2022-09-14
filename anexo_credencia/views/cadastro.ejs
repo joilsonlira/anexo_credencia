@@ -1,0 +1,133 @@
+<%- include('../common/head') %>
+
+<body>
+    <header>
+        <%- include('../common/header') %>
+    </header>
+    <main>
+        
+        <!-- <%- include('../common/banner') %> -->
+        
+        <section class="container">
+            <div class="options">
+                <div class="form_control radio">
+                    <input type="radio" name="rdb_brasileiro" id="rdb_brasileiro">
+                    <label for="rdb_brasileiro">Brasileiro</label>
+                </div>
+                <div class="form_control radio">
+                    <input type="radio" name="rdb_estrangeiro" id="rdb_estrangeiro">
+                    <label for="rdb_estrangeiro">Estrangeiro</label>
+                </div>
+                <div class="form_control checkbox">
+                    <input type="checkbox" name="chb_estudante" id="chb_estudante">
+                    <label for="chb_estudante">Estudante</label>
+                </div>
+            </div>
+            <div class="dados_cadastro">
+                <h2>Dados pessoais</h2>
+                <div class="form_control">
+                    <label for="txt_nome">Nome</label>
+                    <input type="text" name="txt_nome" maxlength="50" required>
+                </div>
+                <div class="form_control">
+                    <label for="txt_nome">Sobre nome</label>
+                    <input type="text" name="txt_sobre_nome" maxlength="50" required>
+                </div>
+                <div class="form_control">
+                    <label for="txt_email">Email</label>
+                    <input type="email" name="txt_email" maxlength="150" required>
+                </div>
+                <div class="form_control">
+                    <label for="txt_confirm_email">Confirmação do e-mail</label>
+                    <input type="email" name="txt_confirm_email" maxlength="150" required>
+                </div>
+                <div class="form_control">
+                    <label for="txt_telefone">Telefone</label>
+                    <input type="tel" name="txt_passaport" maxlength="11" required>
+                </div>
+                <div class="form_control">
+                    <label for="txt_cpf">CPF</label>
+                    <input type="text" name="txt_cpf" maxlength="11" required>
+                </div>
+                <div class="form_control">
+                    <label for="txt_identificacao_estudantil">Identificação estudantil</label>
+                    <input type="text" name="txt_identificacao_estudantil" maxlength="11" required>
+                </div>
+                <div class="form_control">
+                    <label for="txt_passaport">Passaport</label>
+                    <input type="text" name="txt_passaport" maxlength="11" required>
+                </div>
+                <div class="form_control">
+                    <input type="radio" name="rdb_feminino" id="rdb_feminino">
+                    <label for="rdb_feminino">Feminino</label>
+                </div>
+                <div class="form_control">
+                    <input type="radio" name="rdb_masculino" id="rdb_masculino">
+                    <label for="rdb_masculino">Masculino</label>
+                </div>
+                <div class="form_control">
+                    <input type="radio" name="rdb_nao_informado" id="rdb_nao_informado">
+                    <label for="rdb_nao_informado">Prefiro não informar</label>
+                </div>
+            </div>
+            <div class="dados_cadastro">
+                <h2>Endereço</h2>
+                <div class="form_control">
+                    <label for="txt_logradouro">Logradouro</label>
+                    <input type="text" name="txt_empresa" maxlength="200" required>
+                </div>
+                <div class="form_control">
+                    <label for="txt_numero">N°</label>
+                    <input type="text" name="txt_numero" maxlength="15" required>
+                </div>
+                <div class="form_control">
+                    <label for="txt_complemento">Complemento</label>
+                    <input type="text" name="txt_complemento" maxlength="150">
+                </div>
+                <div class="form_control">
+                    <label for="txt_cep">CEP</label>
+                    <input type="text" name="txt_cep" maxlength="11">
+                </div>
+                <div class="form_control">
+                    <label for="txt_estado">Estado</label>
+                    <input type="text" name="txt_estado" maxlength="20">
+                </div>
+                <div class="form_control">
+                    <label for="txt_cidade">Cidade</label>
+                    <input type="text" name="txt_estado" maxlength="50">
+                </div>
+                <div class="form_control">
+                    <label for="txt_uf">UF</label>
+                    <input type="text" name="txt_uf" maxlength="50">
+                </div>
+            </div>
+            <div class="dados_cadastro endereco">
+                <h2>Dados profissionais</h2>
+                <div class="form_control">
+                    <label for="txt_empresa">Empresa</label>
+                    <input type="text" name="txt_empresa" maxlength="50" required>
+                </div>
+                <div class="form_control">
+                    <label for="txt_cargo">Cargo</label>
+                    <input type="text" name="txt_cargo" maxlength="50" required>
+                </div>
+                <div class="form_control">
+                    <label for="txt_email_corporativo">Email corporativo</label>
+                    <input type="email" name="txt_email_corporativo" maxlength="150" required>
+                </div>
+                <div class="form_control">
+                    <label for="txt_atuacao">Área de atuação</label>
+                    <input type="text" name="txt_atuacao" maxlength="50" required>
+                </div>
+            </div>
+            <section class="dados_cadastro button">
+
+                <button class="btn_cadastro">cadastrar</button>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <%- include('../common/footer') %>
+    </footer>
+</body>
+</html>

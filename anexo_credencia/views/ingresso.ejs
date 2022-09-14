@@ -1,0 +1,46 @@
+<%- include('../common/head') %>
+
+<header>
+    <%- include('../common/header') %>
+</header>
+<main id="main_container">
+    <%- include('../common/banner')%>
+    
+    <section class="content">
+        <h2>Seleção de ingressos</h2>
+        <section class="card_container">
+            <div class="card">
+                <h2 class="card_title">Palestra</h2>
+                <p class="vlaue">Valor: R$<span>200,00</span></p>
+                <p>quantidade <span>1</span></p>
+                <button>+</button>
+
+            </div>
+            <div class="card">
+                <h2 class="card_title">Feira</h2>
+                <p class="vlaue">Valor: R$<span>200,00</span></p>
+                <p>quantidade <span>1</span></p>
+                <button>+</button>
+            </div>
+        </section>
+        <section class="cart_container">
+            <div class="cart">
+                <ul class="cart_list">
+                    <li>1 Feira R$0</li>
+                    <li>1 Palestra R$200,00</li>
+                </ul>
+                <h3 class="cart_total">Total: R$200,00</h3>
+            </div>
+        </section>
+        <section class="options">
+            <div class="option_content">
+                <p>Cupom de desconto</p>
+                <input type="text" name="txt_cupom" id="txt_cupom">
+                <button>Aplicar cupom</button>
+            </div>
+        </section>
+    </section>
+</main>
+<footer>
+    <%- include('../common/footer') %>
+</footer>
